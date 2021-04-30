@@ -190,7 +190,7 @@ p {
 }
 
 #ccl,
-#ckl,{
+#ckl {
     position: relative;
     transition: 1.5s;
     width: 8vmin;
@@ -209,10 +209,11 @@ p {
 }
  #cql {
     position: relative;
-    transition: 1.5s;
+    transition: 1s;
     width: 8vmin;
     height: 8vmin;
     z-index:400;
+    bottom:0;
  }
 
 input[type='checkbox'] {

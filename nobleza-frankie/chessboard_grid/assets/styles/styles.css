@@ -390,11 +390,12 @@ p {
 
 #cql {
   position: relative;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 8vmin;
   height: 8vmin;
   z-index: 400;
+  bottom: 0;
 }
 
 input[type=checkbox] {
