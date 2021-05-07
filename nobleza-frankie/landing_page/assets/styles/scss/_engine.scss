@@ -1,0 +1,93 @@
+#engine {
+    background-image: url(../images/roma-engine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    #info-wrapper {
+        padding-right:3vw;
+        padding-left: 54vw;
+        padding-top: 12vh;
+        width:80vw;
+        height: 100vh;
+        text-align: left;
+        background-image:linear-gradient(90deg, $trans,$redop,$dop);
+
+        h1 {
+            font-size: 1.85vw;
+            text-transform: uppercase;
+            font-family: $Raleway;
+            letter-spacing: .3em;
+            cursor: none;
+            margin-bottom:3vh;
+            text-align: left;
+             position: relative;
+            display: inline-block;
+            &:before {
+                content: '';
+                border-bottom: .25vmin solid $yellow;
+                position: absolute;
+                width: 80%;
+                left: 10%;
+                bottom: 0;
+            }
+            a {
+                color:$white;
+                text-decoration: none;
+                &:visited {color:$white;} 
+                &:hover {color:$red;} 
+            }
+        }
+
+        p {
+            color:$white;
+            font-size: 1.5vw;
+            margin-top:1.5vh;
+            font-family: $Mont;
+            margin-bottom: 3vh;
+            display:block;
+            text-align: justify;
+        }
+
+        audio {
+              width: 230px;
+              height: 30px;
+        }
+    }   
+}
+
+@include respond-below(xs) {
+    #engine {
+        background-image: linear-gradient($trans,$redop,$dop),
+        url(../images/roma-engine1.jpg);
+        #info-wrapper {
+            background-image: none;
+            padding:0;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5vw;
+            margin-top:50vh;
+            .border {
+                h1 {
+                    font-size:5vw;
+                    margin:0 0 3vh 10vw;
+                    padding:0;
+                    text-align: center;
+                }
+            }
+            p {
+                font-size:3vw;
+                margin:0 0 3vh 0;
+                width:70vw;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.modal-window {
+    position: fixed;
+    background-color: $dop;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    & > div {
+      width: 22vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: $trans;
+    }
+  }
+  
+  .modal-close {
+    color: $white;
+    line-height: 50px;
+    font-size: 1.5vmin;
+    font-family: $Mont;
+    position: absolute;
+    margin-left:22vw;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+      color:$red    ;
+    }
+  }
+  
+  a {
+    color: inherit;
+  }
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: $trans;
+
+  }
+  
+  .modal-window {
+    & > div {
+      border-radius: 1rem;
+    }
+  }
+  
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    background-color: $darkgrey;
+    padding: 1em 1.5em;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-family:$Mont;
+    font-size:1.8vmin;
+    color:$white;
+    border: .25vmin solid $white;
+    
+  }
+
+.form-container {
+
+    .row {
+        padding: 1vh 1vw;
+        .formLabel {
+            font-family:$Raleway;
+            font-size:2.5vmin;
+            color:$yellow;
+        }
+        .answer {
+            font-family:$Mont;
+            font-size:2.2vmin;
+            color:$darkgrey;
+        }
+
+        .btn {
+            font-family:$Mont;
+            font-size:1.8vmin;
+            color:$black
+        }
+    }
+
+}
+
+#submit-button,
+#exp {
+    background-color: $darkgrey;
+    padding: 1em 1.5em;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-family:$Mont;
+    font-size:1.8vmin;
+    color:$white;
+    border: .25vmin solid $white;
+    &:hover {
+        color:$yellow;
+        background-color: $darkgrey;
+        border: .25vmin solid $red;
+    }
+
+}
+
+@include respond-below(xs) {
+    .modal-window > div {
+      width:52vw;
+
+    }
+
+    .modal-close {
+      margin-left:40vw;
+      font-size:2.5vw;
+    }
+
+    .btn {
+      background-color: $darkgrey;
+      padding: 1em 1.5em;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-family:$Mont;
+      font-size:3vw;
+      color:$white;
+      border: .25vmin solid $white;
+      
+    }
+  
+  .form-container {
+
+    margin-left:-15vw;
+  
+    .row {
+      padding: 1vh 1vw;
+      .formLabel {
+          font-family:$Raleway;
+          font-size:4vw;
+          color:$yellow;
+          padding: 0;
+          margin:0;
+      }
+      .answer {
+          font-family:$Mont;
+          font-size:3.5vw;
+          color:$darkgrey;
+          padding: 0;
+          margin:0;
+      }
+  
+      .btn {
+          font-family:$Mont;
+          font-size:3vw;
+          color:$black;
+          padding: 0;
+          margin:0;
+      }
+    }
+  }
+  #submit-button,
+#exp {
+    background-color: $darkgrey;
+    padding: 1em 1.5em;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-family:$Mont;
+    font-size:3vw;
+    color:$white;
+    border: .25vmin solid $white;
+    &:hover {
+        color:$yellow;
+        background-color: $darkgrey;
+        border: .25vmin solid $red;
+    }
+
+}
+}

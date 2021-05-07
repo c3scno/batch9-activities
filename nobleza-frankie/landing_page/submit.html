@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <!-- Page Responsiveness-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+
+
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <title>Ferrari Roma</title>
+
+    </head>
+
+    <body>
+
+        
+        <section id='loading-page-container'>
+        
+            <div id="top">
+                <img src="assets/images/logo-5.png">
+             </div>
+
+            <div id="bottom">
+            </div>
+        
+        </section>
+
+
+        <section id="temp-container">
+            <div class="in-temp">
+                <div class="sticky-image">
+                    <a href='https://www.ferrari.com/en-PH' target="_blank"> <img src='assets/images/logo-4.png'id='logo'></a>
+                </div>
+                <div class="cta">
+                    <div class="text-in-temp">
+                        <a class='a-text' href="https://carconfigurator.ferrari.com/en_EN/car/ferrari_premium_configurator/roma/default/(ConfigBody:exterior/paintwork/paintwork)?configuration=e333a721617d50583185cc59c569c96efce542b082e61d67cedcbd1450d9aac4" target="_blank">Build Your Own</a></div>
+                    <div class='form-cont'>
+                        <div class="container">
+                            <div class="interior text-in-temp">
+                                <a href="#open-modal" class='a-text'>Drive Her Home</a>
+                            </div>
+                        </div>
+                        <div id="open-modal" class="modal-window">
+                            <div>
+                                <a href="#" title="Close" class="modal-close">Close</a>
+                                <div class='form-container'>
+                                    <form class='form' autocomplete="off" action='submit.html' method='GET'>
+                      
+                                        <div class="row needFlex">
+                      
+                                            <div class="col-25">
+                                                <label for="name" id='name-label' class="formLabel">Name</label>
+                                            </div>
+                                  
+                                            <div class="col-75">
+                                                <input type="text" 
+                                                        id="name"
+                                                        class='answer'
+                                                        name="name" 
+                                                        placeholder="Enzo Ferrari"
+                                                        required>
+                                            </div>
+                                  
+                                        </div>
+                                  
+                                            <div class="row needFlex">
+                                  
+                                                <div class="col-25">
+                                                    <label for="email" id='email-label' class="formLabel">Email Address</label>
+                                                </div>
+                                  
+                                                <div class="col-75">
+                                                    <input type="email" 
+                                                        id="email"
+                                                        class='answer'
+                                                        name="email" 
+                                                        placeholder="example@domain.com"
+                                                        required>
+                                                </div>
+                                            </div>
+                      
+                                            <div class="row needFlex">
+                                  
+                                                <div class="col-25">
+                                                    <label for="phone" id='phone-label' class="formLabel">Phone Number</label>
+                                                </div>
+                                  
+                                                <div class="col-75">
+                                                    <input type="tel" 
+                                                        id="phone"
+                                                        class='answer'
+                                                        name="phone"
+                                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                                                        placeholder="123-456-7890"
+                                                        required>
+                                                </div>
+                                            </div>
+                      
+                                            <div class="row needFlex">
+                                  
+                                                <div class="col-25">
+                                                    <label for="dateTime" id='dateTime-label' class="formLabel">Preferred Time</label>
+                                                </div>
+                                  
+                                                <div class="col-75">
+                                                    <input type="datetime-local"
+                                                        id="dateTime"
+                                                        class='answer'
+                                                        name="dateTime" 
+                                                        value="2021-06-13T13:00"
+                                                        required>
+                                                    </div>
+                                                </div>
+                                  
+                                                <div class="row" id="submitbtn">    
+                                                    <input type="submit" name="button" value="Schedule a Test Drive" id="submit-button" class="btn">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header id="header">
+
+            <nav id="nav-bar">
+                <div>
+                    <a href="index.html"><img id="header-img" src="assets/images/logo-1.png" alt="logo" /></a>
+                </div>
+
+                <input type="checkbox" id='burger-box'>
+                <label for='burger-box'>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                </label>
+
+                <div class="nav-click">
+
+                    <div>
+                        <a href="index.html#about" class="navdiv a-text">About</a>
+                    </div>
+
+                    <div>
+                        <a href="index.html#interior" class="navdiv a-text">Interior</a>
+                    </div>
+
+                    <div>
+                        <a href="index.html#engine" class="navdiv a-text">Engine</a>
+                    </div>
+
+                    <div>
+                        <a href="index.html#specifications" class="navdiv a-text">Specifications</a>
+                    </div>
+
+                    <div>
+                        <a href="index.html#testdrive" class="navdiv a-text">Test Drive</a>
+                    </div>
+
+                </div>
+
+            </nav> 
+
+        </header>
+
+       <section id='background2'></section>
+       
+       <section id='sub-con'>
+            <p>Thank you for choosing Ferrari.<br> Please wait for our
+                confirmation message within 48 hours to confirm your
+                scheduled test-drive.
+            </p>
+       </section>
+
+       <footer>
+        
+        </footer>
+        
+    </body>
+</html>

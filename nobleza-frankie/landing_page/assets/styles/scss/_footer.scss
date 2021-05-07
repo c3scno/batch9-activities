@@ -1,0 +1,150 @@
+footer {
+    background-image:linear-gradient(180deg, $delop,$delop), url(../images/roma-wheel1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom left;
+    padding: 0;
+    margin: 0;
+
+    .accordion {
+        display: flex;
+        flex-direction: row;
+        padding: 3vh 10vw;
+
+        .acc-con {
+             width: 100%;   
+
+            input {
+                display: none;
+                height: 15vh;
+            }
+                
+            label {
+                display: block;
+                background:$trans;
+                color:$white;
+                transition: ease .5s;
+                font-family: $Raleway;
+                font-size: 1.5vw;
+                font-weight: bolder;
+                text-transform: uppercase;
+                text-align: center;
+            }
+                
+            .content {
+                background: $trans;
+                font-family: $Mont;
+                font-size: 1.2vw;
+                text-align: center;
+                padding: .75vh 0;
+                list-style: none;
+            }
+                
+            li {
+                margin:.5vh 0;
+                .f-text {
+                    text-decoration: none;
+                    color:$black;      
+                    &:visited {color:$black;} 
+                    &:hover,  
+                    &:active {
+                      color:$yellow;
+                      border-bottom: 3px solid $red;
+                    }
+                }
+              
+            }
+        }
+    }
+}
+
+@include respond-below(xs) {
+    footer {
+        background-image:linear-gradient(180deg, $delop,$delop), url(../images/roma-wheel1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:bottom left;
+        padding: 0;
+        margin: 0;
+        height:auto;
+        overflow:hidden;
+    
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            padding:0;
+            margin:0;
+    
+            .acc-con {
+                 width: 100%;   
+                 position:relative;
+    
+                input {
+                    display: none;
+                }
+                    
+                label {
+                    display: block;
+                    background:$trans;
+                    color:$white;
+                    transition: ease .5s;
+                    font-family: $Raleway;
+                    font-size: 2.2vw;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin:0;
+                    padding:0;
+                }
+                    
+                .content {
+                    background: $trans;
+                    font-family: $Mont;
+                    font-size: 2vw;
+                    text-align: center;
+                    margin:0;
+                    padding:0;
+                    height:0;
+                }
+                    
+                input + label + .content {
+                    opacity: 0;
+                    height: 0;
+                    font-size: 1.8vw;
+                    transition: ease .5s;
+                    margin:0;
+                    padding:0;
+                    height:0;
+                    visibility: hidden;
+                }
+                    
+                input:checked + label + .content {
+                    opacity: 1;
+                    height: auto;
+                    font-size: 1.8vw;
+                    margin:0;
+                    padding:0;
+                    height:10vh;
+                    visibility: visible;
+                    li {
+                        a {
+                            text-decoration: none;
+                            visibility:visible;
+                            opacity:1;      
+                        }
+                    }
+                }
+                li {
+                    margin:.5vh 0;
+                    .f-text {
+                        text-decoration: none;
+                        visibility:hidden;
+                        opacity:0;      
+                    }
+                  
+                }
+            }
+        }
+    }
+
+}

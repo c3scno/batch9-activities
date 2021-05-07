@@ -1,0 +1,124 @@
+#about{
+
+    .space {
+        color:$trans;
+        height: 10vh;
+    }
+
+    .video-container {
+        background-image:  linear-gradient(180deg, $trans,$dop);
+        width:100%;
+        padding:56.25% 0 0 0;
+        position:relative;
+        overflow:hidden;
+        margin-top: -14vh;
+
+        #video {
+            width:80%;
+            height:100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position:absolute;
+            margin-left:10vw;
+            margin-right:10vw;
+    
+        }
+    }
+
+    #about-info {
+        background-color:$dop;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        padding: 5vh 15vw 17vh 15vw;
+        h1 {
+            font-size: 1.87vw;
+            text-transform: uppercase;
+            font-family: $Raleway;
+            letter-spacing: .4em;
+            margin-bottom: 3vh;
+            position: relative;
+            display: inline-block;
+            &:before {
+                content: '';
+                border-bottom: .25vmin solid $yellow;
+                position: absolute;
+                width: 80%;
+                left: 10%;
+                bottom: 0;
+            }
+            a {
+                color:$white;
+                text-decoration: none;
+                &:visited {color:$white;} 
+                &:hover {color:$red;} 
+            }
+               
+        }
+        .data-container{
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+
+            .data {
+                color:$white;
+                font-size: 1.5vw;
+                margin-top:1.5vh;
+                font-family: $Mont;
+            }
+        }
+    }
+}
+
+@include respond-below(xs) {
+    #about{
+        height:100vh;
+        .video-container {
+            margin-top: 0vh;
+        }
+
+        #about-info {
+            margin-top:-.6px;
+            padding-bottom: 11vh;
+        
+            h1 {
+                font-size:5vw;
+                text-align: center;
+                margin-bottom: 3vh;
+                position: relative;
+                display: inline-block;
+                &:before {
+                    content: '';
+                    border-bottom: .25vmin solid $yellow;
+                    position: absolute;
+                    width: 50%;
+                    left: 25%;
+                    bottom: 0;
+                }
+                a {
+                    color:$white;
+                    text-decoration: none;
+                    &:visited {color:$white;} 
+                    &:hover {color:$red;} 
+                }
+            }
+            .data-container{
+                display: flex;
+                flex-direction: column;
+                align-items: space-between;
+
+                .data {
+                    color:$white;
+                    font-size: 3vw;
+                    margin-top:1.5vh;
+                    font-family: $Mont;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
