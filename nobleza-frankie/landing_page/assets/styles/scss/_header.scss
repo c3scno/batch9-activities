@@ -7,8 +7,8 @@
     .cta{
         display:flex;
         justify-content: space-between;
-        width: 20%;
-        margin-right: -34vw;
+        width: 15%;
+        margin-right: -35vw;
     }
     
         
@@ -29,7 +29,7 @@
     
         .text-in-temp {
                 color: $white;
-                font-size: 16px;
+                font-size: 12px;
                 font-family:$Mont;
                 #modal {
                     display: none;
@@ -133,14 +133,14 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 60%;
+            width:50%;
             margin-top:-3.5vh;
             margin-right:20px;
             align-items: right;
             text-align: right;
             color:$white;
             font-family: $Mont;
-            font-size:20px;
+            font-size:16px;
             }
         }
     #burger-box {
@@ -240,9 +240,10 @@
     #temp-container .in-temp .cta {
         width:auto;
         margin-right:0;
+        margin-left: 24vw;
     }
     #temp-container .in-temp .cta .text-in-temp {
-        margin:0 10px;
+        margin:0 10PX;
     }
     #header #nav-bar .nav-click {
         display:none;

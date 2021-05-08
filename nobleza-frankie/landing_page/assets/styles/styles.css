@@ -188,8 +188,8 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 20%;
-  margin-right: -34vw;
+  width: 15%;
+  margin-right: -35vw;
 }
 #temp-container .in-temp {
   display: -webkit-box;
@@ -214,7 +214,7 @@ p {
 }
 #temp-container .in-temp .text-in-temp {
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Montserrat";
 }
 #temp-container .in-temp .text-in-temp #modal {
@@ -328,7 +328,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 50%;
   margin-top: -3.5vh;
   margin-right: 20px;
   -webkit-box-align: right;
@@ -337,7 +337,7 @@ p {
   text-align: right;
   color: white;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 16px;
 }
 #header #burger-box {
   display: none;
@@ -438,10 +438,11 @@ p {
   #temp-container .in-temp .cta {
     width: auto;
     margin-right: 0;
+    margin-left: 24vw;
   }
 
   #temp-container .in-temp .cta .text-in-temp {
-    margin: 0 10px;
+    margin: 0 10PX;
   }
 
   #header #nav-bar .nav-click {
@@ -1573,7 +1574,7 @@ footer .accordion .acc-con {
 }
 footer .accordion .acc-con input {
   display: none;
-  height: 15vh;
+  height: 12vh;
 }
 footer .accordion .acc-con label {
   display: block;
@@ -1678,9 +1679,9 @@ footer .accordion .acc-con li .f-text:hover, footer .accordion .acc-con li .f-te
     opacity: 1;
     height: auto;
     font-size: 1.8vw;
-    margin: 0;
+    margin: 1vh 0;
     padding: 0;
-    height: 10vh;
+    height: 8vh;
     visibility: visible;
   }
   footer .accordion .acc-con input:checked + label + .content li a {
