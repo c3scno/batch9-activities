@@ -1,0 +1,292 @@
+#temp-container {
+    position: relative;
+    height: 55px;
+    background-color: $darkgrey;
+    z-index:500;
+
+    .cta{
+        display:flex;
+        justify-content: space-between;
+        width: 15%;
+        margin-right: -35vw;
+    }
+    
+        
+    .in-temp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .sticky-image {
+            margin-left:-30vw;
+            #logo {
+                height: 45px;
+                 margin: 5px;
+            }
+        
+        }
+    
+        .text-in-temp {
+                color: $white;
+                font-size: 12px;
+                font-family:$Mont;
+                #modal {
+                    display: none;
+                    &:checked {
+                        &~ #form-container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        &~ #modal-label {
+                            color:$trans;
+                            border-bottom: 3px solid transparent;
+                            
+                        }
+                        &~ #modal-label:before {
+                            display: initial;
+                        }
+                    }
+                }
+                #modal-label {
+                    border-bottom: 3px solid transparent;
+                    z-index: 950;
+                    position:relative;
+
+                    &:hover {
+                        border-bottom: 3px solid $red;
+                        color:$yellow;
+                        cursor: pointer;
+                    }
+                    &:before {
+                        content:"X";
+                        font-size: 3vh;
+                        color:$red;
+                        padding-left: 1vh;
+                        padding-right: 1vh;
+                        position:absolute;
+                        display: none;
+                        border: 3px solid $yellow;
+                    }
+
+                }
+                .form-container {
+                    position:absolute;
+                    top:0;
+                    left: 0;
+                    height: 100vh;
+                    width: 100vw;
+                    background-color:$dop;
+                    z-index: 900;
+                    display: none;
+                    overflow: hidden;
+                    .row {
+                        padding: 1vh 1vw;
+                        .formLabel {
+                            font-family:$Raleway;
+                            font-size:2.5vmin;
+                            color:$white;
+                        }
+                        .answer {
+                            font-family:$Mont;
+                            font-size:2.2vmin;
+                            color:$darkgrey;
+                        }
+
+                        .btn {
+                            font-family:$Mont;
+                            font-size:1.8vmin;
+                            color:$black
+
+                        }
+                    }
+                    
+                }
+                
+        } 
+    }
+}
+
+
+#header {
+    position:sticky;
+    top:0;
+    z-index:300;
+    height: 7vh;
+    background-image: linear-gradient(180deg, $darkgrey,$redop,$trans);
+    
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+      
+            #header-img {
+                margin-left:20px;
+                margin-top:-2vh;
+                min-width: 200px;
+                max-width:18vw;
+            }
+    
+            .nav-click {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:50%;
+            margin-top:-3.5vh;
+            margin-right:20px;
+            align-items: right;
+            text-align: right;
+            color:$white;
+            font-family: $Mont;
+            font-size:16px;
+            }
+        }
+    #burger-box {
+        display: none;
+        z-index:9999;
+        &:checked {
+            &~.nav-click {
+                position:absolute;
+                top:0;
+                left:0;
+                margin-top:-55px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $dop;
+                height: 107.5vh;
+                width: 100vw;
+                z-index:-100;
+                div{
+                    margin-bottom: 7vh;
+                }
+
+            }
+        }
+    }
+
+    .burger {
+        margin-top:-13px;
+        display: none;
+        div {
+            width: 25px;
+            height: 3px;
+            background: $black;
+            margin: 5px;
+        }
+    }
+          
+        
+}
+#background {
+    background-image: url("../images/roma-slideshow1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    position: fixed;
+    width:100vw;
+    height: 110vh;
+    margin-top:-120px;
+    z-index:-100;
+}
+
+#background2 {
+    background-image: url("../images/roma-slideshow5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: fixed;
+    width:100vw;
+    height: 110vh;
+    margin-top:-120px;
+    z-index:-100;
+}
+
+#home {
+    height:100vh;
+    h3 {
+        font-family: $Raleway;
+        font-size: 2.5vw;
+        letter-spacing: .2em;
+        margin-top: 8vh;
+        margin-left: 30px;
+        color: $white;
+        text-shadow: 0px 0px 3px $darkgrey, -1px -1px $darkgrey, 1px 1px $darkgrey;
+
+    }
+    h1 {
+        font-family: $Mont;
+        font-size: 4.5vw;
+        letter-spacing: .2em;
+        margin-left: 30px;
+        color: $white;
+        text-shadow: 0px 0px 4px $darkgrey, -1px -1px $darkgrey, 2px 2px $darkgrey;
+    }
+}
+
+@include respond-below(md) {
+	#background {
+		background-position: bottom;
+	}
+}
+
+@include respond-below(xs) {
+	#temp-container .in-temp .sticky-image {
+        margin-left:0;
+    }
+    #temp-container .in-temp .cta {
+        width:auto;
+        margin-right:0;
+        margin-left: 24vw;
+    }
+    #temp-container .in-temp .cta .text-in-temp {
+        margin:0 10PX;
+    }
+    #header #nav-bar .nav-click {
+        display:none;
+    }
+
+    #header #nav-bar .burger {
+        display:block;
+    }
+
+    #background,
+    #background2 {
+        background-image: url("../images/roma-rear.jfif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        position: fixed;
+
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+            h3 {
+                font-family: $Raleway;
+                font-size: 5vw;
+                letter-spacing: .2em;
+                color: $white;
+                margin:-10vh 0 0 0;
+                text-shadow: 0px 0px 3px $darkgrey, -1px -1px $darkgrey, 1px 1px $darkgrey;
+        
+            }
+            h1 {
+                font-family: $Mont;
+                font-size: 10.0vw;
+                letter-spacing: .2em;
+                color: $white;
+                margin:0;
+                text-shadow: 0px 0px 4px $darkgrey, -1px -1px $darkgrey, 2px 2px $darkgrey;
+                padding-bottom:5vh;
+            }
+    }
+
+}

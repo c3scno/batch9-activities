@@ -1,0 +1,19 @@
+$red: rgb(237, 28, 36);
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$yellow: rgb(255,242,0);
+$darkgrey: rgb(30,30,30);
+$grey: rgb(189,194,194);
+$dop: rgba(51,51,51,0.9);
+$redop: rgba(51,51,51,0.6);
+$delop: rgba(226, 223, 216,0.25);
+$lop: rgba(226, 223, 216,0.5);
+$relop: rgba(226, 223, 216,0.8);
+$trans: rgba(226, 223, 216,0);
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);

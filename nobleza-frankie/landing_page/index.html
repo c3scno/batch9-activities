@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <!-- Page Responsiveness-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/styles/styles.css" type="text/css"/>
+
+
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <title>Ferrari Roma</title>
+
+    </head>
+
+    <body>
+
+        
+        <section id='loading-page-container'>
+        
+            <div id="top">
+                <img src="assets/images/logo-5.png">
+             </div>
+
+            <div id="bottom">
+            </div>
+        
+        </section>
+
+
+        <section id="temp-container">
+            <div class="in-temp">
+                <div class="sticky-image">
+                    <a href='https://www.ferrari.com/en-PH' target="_blank"> <img src='assets/images/logo-4.png'id='logo'></a>
+                </div>
+                <div class="cta">
+                    <div class="text-in-temp">
+                        <a class='a-text' href="https://carconfigurator.ferrari.com/en_EN/car/ferrari_premium_configurator/roma/default/(ConfigBody:exterior/paintwork/paintwork)?configuration=e333a721617d50583185cc59c569c96efce542b082e61d67cedcbd1450d9aac4" target="_blank">Build Your Own</a></div>
+                    <div class='form-cont'>
+                        <div class="container">
+                            <div class="interior text-in-temp">
+                                <a href="#open-modal" class='a-text'>Drive Her Home</a>
+                            </div>
+                        </div>
+                        <div id="open-modal" class="modal-window">
+                            <div>
+                                <a href="#" title="Close" class="modal-close">Close</a>
+                                <div class='form-container'>
+                                    <form class='form' autocomplete="off" action='submit.html' method='GET'>
+                      
+                                        <div class="row needFlex">
+                      
+                                            <div class="col-25">
+                                                <label for="name" id='name-label' class="formLabel">Name</label>
+                                            </div>
+                                  
+                                            <div class="col-75">
+                                                <input type="text" 
+                                                        id="name"
+                                                        class='answer'
+                                                        name="name" 
+                                                        placeholder="Enzo Ferrari"
+                                                        required>
+                                            </div>
+                                  
+                                        </div>
+                                  
+                                            <div class="row needFlex">
+                                  
+                                                <div class="col-25">
+                                                    <label for="email" id='email-label' class="formLabel">Email Address</label>
+                                                </div>
+                                  
+                                                <div class="col-75">
+                                                    <input type="email" 
+                                                        id="email"
+                                                        class='answer'
+                                                        name="email" 
+                                                        placeholder="example@domain.com"
+                                                        required>
+                                                </div>
+                                            </div>
+                      
+                                            <div class="row needFlex">
+                                  
+                                                <div class="col-25">
+                                                    <label for="phone" id='phone-label' class="formLabel">Phone Number</label>
+                                                </div>
+                                  
+                                                <div class="col-75">
+                                                    <input type="tel" 
+                                                        id="phone"
+                                                        class='answer'
+                                                        name="phone"
+                                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                                                        placeholder="123-456-7890"
+                                                        required>
+                                                </div>
+                                            </div>
+                      
+                                            <div class="row needFlex">
+                                  
+                                                <div class="col-25">
+                                                    <label for="dateTime" id='dateTime-label' class="formLabel">Preferred Time</label>
+                                                </div>
+                                  
+                                                <div class="col-75">
+                                                    <input type="datetime-local"
+                                                        id="dateTime"
+                                                        class='answer'
+                                                        name="dateTime" 
+                                                        value="2021-06-13T13:00"
+                                                        required>
+                                                    </div>
+                                                </div>
+                                  
+                                                <div class="row" id="submitbtn">    
+                                                    <input type="submit" name="button" value="Schedule a Test Drive" id="submit-button" class="btn">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header id="header">
+
+            <nav id="nav-bar">
+                <div>
+                    <a href="#"><img id="header-img" src="assets/images/logo-1.png" alt="logo" /></a>
+                </div>
+
+                <input type="checkbox" id='burger-box'>
+                <label for='burger-box'>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                </label>
+
+                <div class="nav-click">
+
+                    <div>
+                        <a href="#about" class="navdiv a-text">About</a>
+                    </div>
+
+                    <div>
+                        <a href="#interior" class="navdiv a-text">Interior</a>
+                    </div>
+
+                    <div>
+                        <a href="#engine" class="navdiv a-text">Engine</a>
+                    </div>
+
+                    <div>
+                        <a href="#specifications" class="navdiv a-text">Specifications</a>
+                    </div>
+
+                    <div>
+                        <a href="#testdrive" class="navdiv a-text">Test Drive</a>
+                    </div>
+
+                </div>
+
+            </nav> 
+
+        </header>
+
+       <section id='background'></section>
+        
+        <section id="home">
+            <br>
+            <h3 id='descri'>La Nuova Dolce Vita</h3>
+            <h1 id='title'>Ferrari Roma</h1>
+        
+        </section>
+    
+        
+        <section id="about" class="info">
+            <div class='space'>hi</div>
+            <div class='info-text'>
+                <div class='video-container'>
+
+                    <iframe id='video' src="https://player.vimeo.com/video/437089978?autoplay=1&loop=1&muted=1" 
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    
+                </div>
+                <div id='about-info'>
+                    <div class='border'>
+                        <h1>
+                            <a href="https://www.ferrari.com/en-PH/auto/ferrari-roma/share/design" target="_blank">Timeless Elegance</a>
+                        </h1>
+                    </div>
+                    <div class='data-container'>
+                        <div class='data'>       
+                            <p>&nbsp &nbspThe Ferrari Roma, the new mid-front-engined 2+ coupé of the Prancing Horse,
+                                features refined proportions and timeless design combined with unparalleled
+                                performance and handling. With its distinctive flair and style, the car is 
+                                a contemporary representation of the carefree, pleasurable way of life that 
+                                characterised Rome in the 1950s and ‘60s.</p>     
+                        </div>
+
+                        <div class='data'>
+                            <p>&nbsp &nbspThe approach taken by the Ferrari Styling Centre for the Ferrari Roma’s exterior 
+                                centres around clean design and absolute symbiosis between its various elements 
+                                with harmonious proportions and pure, elegant volumes. To underscore that formal 
+                                minimalism, all superfluous detailing has been removed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section id="interior" class="info">
+
+            <div id="interior-info">
+                <div class='border'>
+                    <h1>
+                        <a href="https://www.ferrari.com/en-PH/auto/ferrari-roma/share/interior/interior-focus" target="_blank">Co-Pilot,<br>Not Passenger</a>
+                    </h1>
+                </div>
+                <p>&nbsp &nbspThe cockpit of the Ferrari Roma has an almost symmetrical structure. 
+                    This makes for a more organic distribution of space and functions, 
+                    so that the passenger feels extremely involved in the driving.</p>
+            </div>
+
+            <div class="slider">
+              
+                <div class="slides">
+                  <div id="slide-1"></div>
+                  <div id="slide-2"></div>
+                  <div id="slide-3"></div>
+                  <div id="slide-4"></div>
+                  
+                </div>
+
+            </div>
+              
+
+        </section>
+
+
+        <section id="engine" class="info">
+            <div id='info-wrapper'>
+                <div class='border'>
+                    <h1>
+                        <a href="https://www.ferrari.com/en-PH/auto/ferrari-roma/share/powertrain" target="_blank">More Gears,<br>Less Fuel<br>Consumption</a>
+                    </h1>
+                </div>
+                <p> &nbsp The Ferrari Roma represents the pinnacle of performance in this category, thanks to its turbo-charged V8 from the family of engines that 
+                    has won the overall International Engine of the Year award four years running. In this version, the engine reaches 620 cv 
+                    at 7500 rpm and is coupled with the new 8-speed DCT gearbox that was introduced on the SF90 Stradale.</p>
+                <audio src='https://ferrari-cdn.thron.com/static/UUS6UY_Ferrari_F164_EST_Accensione_3_OK-128_ZX0BCV.mp3?xseo=' controls></audio>
+            </div>
+            
+        </section>
+
+
+        <section id="specifications" class="info">
+            <div class="for-flex">
+
+                <div class="container">
+                    <div class="front side" id="dimensions">
+                        <div class="content">
+                            <h1>Dimensions</h1>
+                        </div>
+                    </div>
+                    <div class="back side">
+                        <div class="content">
+                            <div class='wrapper'>
+                                <div class='head one'>Dimensions</div>
+                                <div class='legend two'>Wheelbase: </div><div class='value column-two'>&nbsp&nbsp&nbsp2,67 m</div>
+                                <div class='legend three'>Length: </div><div class='value column-three '>&nbsp&nbsp&nbsp4,66 m</div>
+                                <div class='legend four'>Width: </div><div class='value column-four'>&nbsp&nbsp&nbsp1,97 m</div>
+                                <div class='legend five'>Height: </div><div class='value column-five'>&nbsp&nbsp&nbsp1,39 m</div>
+                                <div class='legend six'>Curb weight:</div><div class='value column-six'>&nbsp&nbsp&nbsp1633 Kg</div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="front side" id="emissions">
+                        <div class="content">
+                            <h1>CO2 Emissions</h1>
+                        </div>
+                    </div>
+                    <div class="back side">
+                        <div class="content">
+                            <div class='wrapper'>
+                                <div class='head one'>CO2 Emissions</div>
+                                <div class='legend two'>LOW: </div><div class='value column-two'>&nbsp&nbsp&nbsp404 G/KM</div>
+                                <div class='legend three'>MID: </div><div class='value column-three'>&nbsp&nbsp&nbsp246 G/KM</div>
+                                <div class='legend four'>HIGH: </div><div class='value column-four'>&nbsp&nbsp&nbsp220 G/KM</div>
+                                <div class='legend five'>EXTRA HIGH: </div><div class='value column-five'>&nbsp&nbsp&nbsp235 G/KM</div>
+                                <div class='legend six'>COMBINED: </div><div class='value column-six'>&nbsp&nbsp&nbsp255 G/KM</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="front side" id="consumption">
+                        <div class="content">
+                            <h1>Consumption</h1>
+                        </div>
+                    </div>
+                    <div class="back side">
+                        <div class="content">
+                            <div class='wrapper'>
+                                <div class='head one'>Fuel Consumption</div>
+                                <div class='legend two'>LOW: </div><div class='value column-two'>&nbsp&nbsp&nbsp17,8 L/100 KM</div>
+                                <div class='legend three'>MID: </div><div class='value column-three'>&nbsp&nbsp&nbsp10,8 L/100 KM</div>
+                                <div class='legend four'>HIGH: </div><div class='value column-four'>&nbsp&nbsp&nbsp9,7 L/100 KM</div>
+                                <div class='legend five'>EXTRA HIGH: </div><div class='value column-five'>&nbsp&nbsp&nbsp10,3 L/100 KM</div>
+                                <div class='legend six'>COMBINED: </div><div class='value column-six'>&nbsp&nbsp&nbsp11,2 L/100 KM</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="front side" id="speed">
+                        <div class="content">
+                            <h1>Performance</h1>
+                        </div>
+                    </div>
+                    <div class="back side">
+                        <div class="content">
+                            <div class='wrapper'>
+                                <div class='head one'>Performance</div>
+                                <div class='legend two'>100 kph: </div><div class='value column-two'>&nbsp&nbsp&nbsp3.4s</div>
+                                <div class='legend three'>200 kph:</div><div class='value column-three'>&nbsp&nbsp&nbsp9,3s</div>
+                                <div class='legend four'>500m :</div><div class='value column-four'>&nbsp&nbsp&nbsp12,9s @ 233kph</div>
+                                <div class='legend five'>1km:</div><div class='value column-five'>&nbsp&nbsp&nbsp20,8s @ 275kph</div>
+                                <div class='legend six'>Top speed:</div><div class='value column-six'>&nbsp&nbsp&nbsp320kph</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+
+        <section id="testdrive" class="info">
+            <div class='space'>hi</div>
+
+            <div class='video-container'>
+
+                <div class="el-vid">
+
+                    <iframe class='video' src="https://player.vimeo.com/video/517970130" 
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                
+                </div>
+            </div>
+            <div class='form-cont'>
+                <div class="container">
+                    <div class="interior">
+                      <a class="btn" href="#open-modal" id="exp">Experience Roma</a>
+                    </div>
+                  </div>
+                  <div id="open-modal" class="modal-window">
+                    <div>
+                      <a href="#testdrive" title="Close" class="modal-close">Close</a>
+                      <div class='form-container'>
+                                          <form class='form' autocomplete="off" action='submit.html' method='GET'>
+                  
+                                              <div class="row needFlex">
+                  
+                                                  <div class="col-25">
+                                                    <label for="name" id='name-label' class="formLabel">Name</label>
+                                                  </div>
+                              
+                                                  <div class="col-75">
+                                                    <input type="text" 
+                                                    id="name"
+                                                    class='answer'
+                                                    name="name" 
+                                                    placeholder="Enzo Ferrari"
+                                                    required>
+                                                  </div>
+                              
+                                              </div>
+                              
+                                              <div class="row needFlex">
+                              
+                                                  <div class="col-25">
+                                                    <label for="email" id='email-label' class="formLabel">Email Address</label>
+                                                  </div>
+                              
+                                                  <div class="col-75">
+                                                    <input type="email" 
+                                                    id="email"
+                                                    class='answer'
+                                                    name="email" 
+                                                    placeholder="example@domain.com"
+                                                    required>
+                                                  </div>
+                                              </div>
+                  
+                                              <div class="row needFlex">
+                              
+                                                  <div class="col-25">
+                                                    <label for="phone" id='phone-label' class="formLabel">Phone Number</label>
+                                                  </div>
+                              
+                                                  <div class="col-75">
+                                                    <input type="tel" 
+                                                    id="phone"
+                                                    class='answer'
+                                                    name="phone"
+                                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                                                    placeholder="123-456-7890"
+                                                    required>
+                                                  </div>
+                                              </div>
+                  
+                                              <div class="row needFlex">
+                              
+                                                  <div class="col-25">
+                                                    <label for="dateTime" id='dateTime-label' class="formLabel">Preferred Time</label>
+                                                  </div>
+                              
+                                                  <div class="col-75">
+                                                    <input type="datetime-local"
+                                                    id="dateTime"
+                                                    class='answer'
+                                                    name="dateTime" 
+                                                    value="2021-06-13T13:00"
+                                                    required>
+                                                  </div>
+                                              </div>
+                              
+                                              <div class="row" id="submitbtn">    
+                                                  <input type="submit" name="button" value="Schedule a Test Drive" id="submit-button" class="btn">
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                  
+                              </div>
+                      </div>
+                  </div>
+            </div>
+                  
+        </section>
+
+        
+        <footer>
+            <section class="accordion">
+
+                <div class="acc-con">
+                    <input type="checkbox" id="title1"/>
+                    <label for="title1">Auto</label>
+                        <ul class="content">
+                            <li><a href="https://www.ferrari.com/en-PH/auto/car-range" target="_blank" class='f-text'>Ferrari Line Up</a></li>
+                            <li><a href="https://www.ferrari.com/en-PH/auto/car-part-services" target="_blank" class='f-text'>Services</a></li>
+                            <li><a href="https://www.ferrari.com/en-PH/auto/personalization" target="_blank" class='f-text'>Personalization</a></li>
+                            <li><a href="https://preowned.ferrari.com/en" target="_blank" class='f-text'>Ferrari Certified Pre-owned</a></li>
+                            <li><a href="https://www.ferrari.com/en-PH/auto/myferrari" target="_blank" class='f-text'>MyFerrari App</a></li>
+                        </ul>
+                </div>
+    
+                <div class="acc-con">
+                    <input type="checkbox" id="title2"/>
+                    <label for="title2">Scuderia</label>
+                    <ul class="content">
+                        <li><a href="https://www.ferrari.com/en-PH/formula1/charles-leclerc" target="_blank" class='f-text'>Charles Leclerc</a></li>
+                        <li><a href="https://www.ferrari.com/en-PH/formula1/carlos-sainz" target="_blank" class='f-text'>Carlos Sainz</a></li>
+                        <li><a href="https://www.ferrari.com/en-PH/fda" target="_blank" class='f-text'>Driver Academy</a></li>
+                        <li><a href="https://sfcregistration.ferrari.com/" target="_blank" class='f-text'>Scuderia Member</a></li>
+                        <li><a href="https://www.ferrari.com/en-PH/formula1/partners" target="_blank" class='f-text'>Partners</a></li>
+                    </ul>
+                </div>
+    
+                <div class="acc-con">
+                    <input type="checkbox" id="title3"/>
+                    <label for="title3">Store</label>
+                    <ul class="content">
+                        <li><a href="https://store.ferrari.com/en-gb/focus-on/replica/?from=FT" target="_blank" class='f-text'>Puma Teamwear</a></li>
+                        <li><a href="https://store.ferrari.com/en-gb/collection/ray-ban-for-scuderia-ferrari/?from=FT" target="_blank" class='f-text'>Ray-ban Eyeware</a></li>
+                        <li><a href="https://store.ferrari.com/en-gb/men/accessories/puma-shoes%20?from=FT" target="_blank" class='f-text'>Ferrari Shoes</a></li>
+                        <li><a href="https://store.ferrari.com/en-gb/watches/men/?from=FT" target="_blank" class='f-text'>Ferrari Watches</a></li>
+                        <li><a href="https://store.ferrari.com/en-gb/collectibles/collectors-items/memorabilia/?from=FT" target="_blank" class='f-text'>Ferrari Memorabilia</a></li>
+                    </ul>
+                </div>
+    
+                <div class="acc-con">
+                    <input type="checkbox" id="title5"/>
+                    <label for="title5">Socials</label>
+                    <ul class="content">
+                        <li><a href="https://www.facebook.com/Ferrari" target="_blank" class='f-text'>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/ferrari/" target="_blank" class='f-text'>Instagram</a></li>
+                        <li><a href="https://twitter.com/Ferrari" target="_blank" class='f-text'>Twitter</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCd8iY-kEHtaB8qt8MH--zGw" target="_blank" class='f-text'>Youtube</a></li>
+                        <li><a href="https://www.linkedin.com/company/ferrari/" target="_blank" class='f-text'>LinkedIn</a></li>
+                    </ul>
+                </div>
+        </footer>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </body>
+
+</html>

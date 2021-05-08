@@ -1,0 +1,35 @@
+#sub-con {
+    background-color:$lop;
+    margin-top:-7vh;
+    height: 92.7vh;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    p {
+        width:40%;
+        text-align: center;
+        margin:auto;
+        font-family: $Mont;
+        color:$darkgrey;
+        font-size: 2vw;
+    }
+}
+@include respond-below(xs) {
+    #sub-con {
+        background-color:$lop;
+        margin-top:-7vh;
+        height: 91.8vh;
+        display:grid;
+        align-content: center;
+        justify-content: center;
+        p {
+            width:80%;
+            text-align: justify;
+            margin:auto;
+            font-family: $Mont;
+            color:$darkgrey;
+            font-size: 4.5vw;
+        }
+    }
+
+}

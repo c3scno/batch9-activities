@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    border: none;
+    overflow-x: hidden;
+}
+
+h1,
+h3,
+p {
+  margin:0 0 0 0;
+}
+.a-text {
+  text-decoration: none;
+  color:$white;       
+  &:visited {color:$white;} 
+  &:hover,  
+  &:active {
+    color:$yellow;
+    border-bottom: 3px solid $red;
+  }  
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: $darkgrey; 
+    border-radius: 0px;
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: $lop; 
+    border-radius: 0px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: $red; 
+  }
