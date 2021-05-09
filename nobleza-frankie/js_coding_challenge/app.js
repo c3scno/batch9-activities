@@ -28,7 +28,7 @@ function replaceBooks(){
 }
 replaceBooks() */
 
-const books = ['Moby Dick', 'Alice in Wonderland', 'Hungry Caterpillar']
+let books = ['Moby Dick', 'Alice in Wonderland', 'Hungry Caterpillar']
 
 function replaceBooks(){
     books = ['Life of Pi', 'Grokkings Algorithms', 'New Earth']
@@ -44,6 +44,13 @@ function textCustomer() {
     console.log('Hi ' + firstName + ', your book is now in')
 }
 textCustomer() */
+function textCustomer() {
+    {
+       var firstName = 'Molly' 
+    }
+    console.log('Hi ' + firstName + ', your book is now in')
+}
+textCustomer()
 
 /*     Coding Challenge: Objects
 Create an object that describes something of your choosing, like a car or animal.
