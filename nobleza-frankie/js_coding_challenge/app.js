@@ -28,6 +28,13 @@ function replaceBooks(){
 }
 replaceBooks() */
 
+const books = ['Moby Dick', 'Alice in Wonderland', 'Hungry Caterpillar']
+
+function replaceBooks(){
+    books = ['Life of Pi', 'Grokkings Algorithms', 'New Earth']
+}
+replaceBooks()
+
 /* We need to text our customer that their book is in. What would you have to do here in order for this function to work?
 
 function textCustomer() {
