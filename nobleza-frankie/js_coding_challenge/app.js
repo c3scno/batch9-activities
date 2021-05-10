@@ -53,7 +53,6 @@ function textCustomer() {
     console.log('Hi ' + firstName + ', your book is now in')
 }
 textCustomer()
-console.log(textCustomer)
 
 /*     Coding Challenge: Objects
 Create an object that describes something of your choosing, like a car or animal.
@@ -118,6 +117,22 @@ else - both were correct and the user was able to log in */
 
 let username = "cfnobleza"
 let password = "12345"
+
+if(password !== "12345" || username !== "cfnobleza"){
+    console.log("Incorrect");
+} else {
+    console.log("Correct");
+}
+
+username = 'Stevie'
+
+if(password !== "12345" || username !== "cfnobleza"){
+    console.log("Incorrect");
+} else {
+    console.log("Correct");
+}
+
+password = 12345
 
 if(password !== "12345" || username !== "cfnobleza"){
     console.log("Incorrect");
