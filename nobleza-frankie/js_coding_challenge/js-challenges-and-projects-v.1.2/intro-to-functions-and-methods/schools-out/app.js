@@ -1,5 +1,5 @@
-function sendText( ) {
-    //Write your code here.
+function sendText(firstName, lastName ) {
+    console.log(`This message is to inform you, student ${firstName} ${lastName}, that there will be no classes for today.`)
 }
 sendText()
 
