@@ -22,8 +22,14 @@ fridge.push(item)
 
 
 function moveUp(){
+
     let items = fridge.pop()
-    buyList.push(items)
+        if (fridge.length > 0 ) {
+            buyList.push(items)
+        }
+        else {
+            console.log(`Nothing in the Fridge`)
+        }
     
     buyListDisplay.innerHTML = buyList
     fridgeListDisplay.innerHTML = fridge
@@ -38,8 +44,12 @@ upButton.addEventListener('click', moveUp)
 function moveDown(){
     
     let grocery = buyList.pop()
-    fridge.push(grocery)
-    
+        if (buyList.length > 0) {
+            fridge.push(grocery)
+        }
+        else {
+            console.log(`Nothing to buy`)
+        }
     buyListDisplay.innerHTML = buyList
     fridgeListDisplay.innerHTML = fridge
     
