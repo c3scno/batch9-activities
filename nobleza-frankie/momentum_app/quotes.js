@@ -79,7 +79,7 @@ const addNewQuotes= () => {
     const button = document.createElement("button");
         text.textContent=`${quotes[quotes.length-1].author} once said, "${quotes[quotes.length-1].quote}"`;
         document.getElementById("new-quotes").append(text);
-        for (i=3; i < quotes.length ; i++) {
+        for (i=4; i < quotes.length ; i++) {
             button.id = quotes.indexOf(quotes[i]);
         }
         button.textContent = "🗑️";
