@@ -1,0 +1,169 @@
+html.dark-mode {
+    body {
+        #wrapper {
+            #content {
+                width: 50vw;
+                height: 100vh;
+                padding: 2vh 2vw;
+                background-color: $darkgrey;
+                color:$white;
+                z-index:100;
+            
+                #misc {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-content: space-between;
+            
+                    #mode-toggle {
+                        font-size: 2vw;
+                        background-color: $trans;
+                        border: none;
+                        cursor: pointer;
+                        &::before {
+                            content: "☀️"
+                        }
+                        &.click::before {
+                            content: "🌙"
+                        }
+                    }
+                    #weather-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        font-family:$Quicksand;
+                    }
+                }
+            
+                #group{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+            
+                    #time {
+                        font-size: 7.5vw;
+                        font-family: $Mont;
+                        margin-top:3vh;
+                        padding:0;
+                    }
+                    #day-date {
+                        margin:0;
+                        padding:0;
+                        font-size: 2.2vw;
+                        font-family: $Mont;
+                        margin-top:1vh;
+                            #day {
+                                color:$duskblue;
+                                font-weight: 700;
+                            }
+                    }
+                    #greetings {
+                        margin:0;
+                        padding:0;
+                        font-size: 3vw;
+                        font-family: $Mont;
+                        margin-top:3vh;
+            
+                        #name {
+                            background-color: $trans;
+                            border: none;
+                            border-bottom: 1px solid $grey;
+                            font-size: 3vw;
+                            font-family: $Mont;
+                            box-sizing: border-box;
+                            width: 15vw;
+                            color:$duskblue;
+                            &::placeholder {
+                                color: $grey;
+                            }
+                            &:focus {
+                                outline: none;
+                                border-bottom: 1px solid $darkgrey;
+                            }
+            
+                        }
+                    }
+                    #main-focus {
+                        margin:0;
+                        padding:0;
+                        margin-top:5vh;
+            
+                        #focus{
+                            font-size: 3vw;
+                            font-family: $Mont;
+                            font-weight: 900;
+                            width: 40vw;
+                            background-color: $dgrey;
+                            border: none;
+                            padding: 5px;
+                            text-align: center;
+                            color:$duskblue;
+                            border-radius: 10px;
+                            &::placeholder {
+                                color: $grey;
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                    #todo_list {
+                        margin:0;
+                        margin-top: 3vh;
+                        padding: 1vh 1vw;
+                        color:$ivory;
+                        background-color:$duskblue;
+                        font-family:$Poppins;
+                        max-height:30vh;
+                        font-size: 1.3vw;
+                        width:32vw;
+                        border-radius: 1vw;
+                        #add_task {
+                            margin: 0;
+                            padding: 1vh 1vw;
+                            #input_task{
+                                width:85%;
+                                margin:0;
+                                padding: .25vh 0.25vw;
+                                font-size: 1.3vw;
+                                font-family: $Mont;
+                            }
+                            #add_button {
+                                margin-left: 1vw;
+                                background-color: $grey;
+                                color: $duskblue;
+                                border: 0px;
+                                border-radius: 25px;
+                                font-size:1.5vw;
+                                &:focus {
+                                    outline:none;
+                                }
+                            }
+                            div {
+                                #task_list {
+                                    padding:0;
+                                    margin:0;
+                                    li {
+                                        max-width: 20vw;
+                                    }
+                                }
+                                #completed_title {
+                                    font-size:0.75vw;
+                                }
+                                #completed_list {
+                                    list-style: none;
+                                    margin:0;
+                                    padding:0.2vh 0;
+                                }
+                            }
+                        }
+                        .complete {
+                            text-decoration: line-through;
+                            color:$darkgrey;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
