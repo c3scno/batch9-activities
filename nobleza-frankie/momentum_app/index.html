@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <link rel="shortcut icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png" type="image/x-icon">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+    <script src="app.js" defer></script>
+    <script src="weather.js" defer></script>
+    <script src="time.js" defer></script>
+    <script src="quotes.js" defer></script>
+    <script src="todo.js" defer></script>
+
+    <title>Momentum App</title>
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <section id="image-side">
+
+            <div id="image-slideshow">
+                <ul class="bg-slideshow">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                </ul>
+            </div>
+
+            <div id="text">
+                <div id="quote-wrapper">
+                    <h1 id= "quote">Shuffle to get a random quote</h1>
+                    <p id= "author">click the button</p>
+                    <button id="shuffle">↹</button>
+                </div>
+                <div id ="with-button">
+                    <section id="modal-container" class="hide">
+                        <div id="modal">
+                            <a id="close" href="#" title="Close">close</a>
+                            <input type="text" placeholder='Write Quote Here' id="quote-input">
+                            <input type="text" placeholder="Author" id="author-input">
+                            <button id="btn-new-quote">
+                                Add Quote
+                            </button>
+                            <div id="new-quotes">    
+                            </div>
+                        </div>
+                    </section>
+                    <button id="add-quote">
+                        Add New Quote
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="content">
+        
+            <div class="row" id="misc">
+
+                <button id="mode-toggle">  
+                </button>
+                <button id="time-toggle">
+                </button>
+                
+                <div id="weather-wrapper">
+                    <div><span id="weather"></span>&nbsp&nbsp<span id="temp"></span></div>
+                    <div id="location"></div>
+                </div>
+
+            </div>
+            <div id="group">
+                <div id="time" class="row"></div>
+                <div id="time12" class="none"></div>
+                <div class="row" id="day-date"><span id="day"></span>,&nbsp<span id="date"></span>&nbsp<span id="month"></span>&nbsp<span id="year"></span>.</div>
+                <div id="greetings" class="row"><span id="greeting"></span>,&nbsp<input type='text' placeholder="User" id="name" name="name">.</div>
+                <div id="main-focus" class="row"><input type="text" id="focus" name="focus" placeholder="Your main focus for today is . . ."></div>
+
+                <section id="todo_list">
+                    <form id="add_task">
+                        <input type="text" id="input_task" name="input" placeholder="What needs to be done?" maxlength="18">
+                        <button type="button" id="add_button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </form>
+                        <div>
+                            <ul id="task_list">
+                                <li>
+                                    <input type="checkbox">
+                                    <span class="input">Humagulgol</span>
+                                    <button type="button" class="edit_task_button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </li>
+                            </ul>	
+                            <h2 id="completed_title">Completed</h2>
+                            <ul id="completed_list"></ul>				
+                        </div>
+                </section>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

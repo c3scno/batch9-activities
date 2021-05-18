@@ -1,0 +1,190 @@
+#image-side {
+    width: 50vw;
+    background-color: $duskblue;
+    height: 100vh;
+
+    #image-slideshow {
+        .bg-slideshow,
+        .bg-slideshow:after {
+            position: fixed;
+            width:100%;
+            height:100%;
+            top: 0;
+            left: 0;
+            z-index: 0; 
+            list-style-type: none;
+            padding:0;
+            margin: 0;
+        }
+        .bg-slideshow:active {
+            content:" ";
+        }
+        .bg-slideshow li span { 
+            width: 50vw;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-repeat: none;
+            opacity: 0;
+            z-index: 0;
+            backface-visibility: hidden;
+            animation: imageAnimation 28s linear infinite 0s;
+        }
+        .bg-slideshow li:nth-child(1) span { 
+            background-image: linear-gradient($relop,$relop),
+            url("https://images.unsplash.com/photo-1555078645-23f8745c8f59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            background-position: left bottom;
+        }
+        .bg-slideshow li:nth-child(2) span { 
+            background-image:linear-gradient($relop,$relop),
+            url("https://images.unsplash.com/photo-1471560090527-d1af5e4e6eb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            background-position: right bottom;
+            animation-delay: 7s;
+        }
+        .bg-slideshow li:nth-child(3) span {
+            background-image:linear-gradient($relop,$relop),
+            url("https://images.unsplash.com/photo-1501696461415-6bd6660c6742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
+            animation-delay: 14s;
+        }
+        .bg-slideshow li:nth-child(4) span {
+            background-image:linear-gradient($relop,$relop),
+            url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            animation-delay: 21s;
+        }
+
+        @keyframes imageAnimation { 
+            0% { opacity: 0;
+            animation-timing-function: ease-in; }
+            8% { opacity: 1;
+                 animation-timing-function: ease-out; }
+            17% { opacity: 1 }
+            25% { opacity: 1 }
+            45% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+    }
+    #text{
+        position:relative;
+        height: 100vh;
+        overflow: hidden;
+        #quote-wrapper {
+            padding: 10vh 5vw;
+            margin-top:25vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:50vh;
+
+            #quote {
+                color:$darkgrey;
+                font-family: $Poppins;
+                font-weight: 700;
+                font-size: 2.5vw;
+                margin:0;
+                padding:0;
+                text-align: center;
+            }
+            #author {
+                margin:0;
+                padding:0;
+                color: $darkgrey;
+                font-family: $Mont;
+                font-weight: 700;
+                font-size: 1.5vw;
+                padding-bottom: 1.5vh;
+            }
+            #shuffle {
+                margin:0;
+                margin-top:-.5vh;
+                padding:0;
+                color: $darkgrey;
+                font-family: $Mont;
+                font-size: 2.5vw;
+                background-color:$trans;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        #with-button {
+            position:relative;
+            margin:0;
+            padding:0;
+            margin-top: -10vh;
+            height:30vh;
+
+            #modal-container {
+                display: none;
+                width:40vw;
+                position:absolute;
+                margin-left:5vw;  
+                padding: 1vh 1vw;
+                border-radius: 5px;
+                background-color: $white;
+                font-size: 1vw;
+                color: $darkgrey;
+                font-family: $Poppins;
+                margin-top:-50vh;
+                overflow-y: scroll;
+                max-height: 50vh;
+                &.show {
+                    display: initial;
+                }
+                #modal {
+                    width:80%;
+                    margin:auto;
+                    #quote-input {
+                        width:100%;
+                        text-align: center;
+                        margin-top:3vh;
+                    }
+                    #close {
+                        color: $darkgrey;
+                        line-height: 50px;
+                        font-size: 80%;
+                        position: absolute;
+                        right: 0;
+                        text-align: center;
+                        top: 0;
+                        width: 70px;
+                        text-decoration: none;
+                        margin:0;
+                        padding: 0;
+                        margin-top:-.1vh;
+                        &:hover {
+                            color: $darkblue;
+                        }
+                    }
+                    #new-quotes {
+                        p {
+                            button {
+                                float:right;
+                                border: none;
+                                font-size: 1vw;
+                                background-color: $trans;
+                            }
+                        }
+                    }
+                }
+            }
+            #add-quote {    
+                margin-left: 2vw;
+                font-size: 1vw;
+                padding:0;
+                color:$darkgrey;
+                font-family: $Quicksand;
+                font-weight: 700;
+                padding: 1vh 1vw;
+                background-color: $trans;
+                border:none;
+                cursor: pointer;
+                position:absolute;
+                bottom:0;
+                left:0;
+            }
+        }
+    }
+}
