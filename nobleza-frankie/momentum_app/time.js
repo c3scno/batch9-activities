@@ -68,7 +68,7 @@ const getTime12 = () => {
 getTime12();
 
 
-
+const getDate = () => {
 //add day of the week
 let text;
     switch (new Date().getDay()) {
@@ -114,3 +114,13 @@ document.getElementById("date").innerHTML = d.getDate();
 d = new Date();
 let n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
+}
+
+getDate();
+
+
+const dateRefresh = () => {
+  setInterval(() => {
+      getDate();
+  }, 60000);
+};
