@@ -8,14 +8,11 @@ const quotes = [
     {quote: "Just use your imagaination.",
     author: "Foster the People"},
 
-    {quote: "So are you happy now?",
+    {quote: "Finally happy now, are you?",
     author: "IU"},
 
-    {quote: "Thank you, next.",
-    author: "Ariana Grande"},
-
-    {quote: "This was all you, none of it me.",
-    author: "Adele"}
+    {quote: "They say an end can be a start.",
+    author: "Phoenix"}
 ]
 
 //randomizer
@@ -79,7 +76,7 @@ const addNewQuotes= () => {
     const button = document.createElement("button");
         text.textContent=`${quotes[quotes.length-1].author} once said, "${quotes[quotes.length-1].quote}"`;
         document.getElementById("new-quotes").append(text);
-        for (i=4; i < quotes.length ; i++) {
+        for (i=3; i < quotes.length ; i++) {
             button.id = quotes.indexOf(quotes[i]);
         }
         button.textContent = "🗑️";
