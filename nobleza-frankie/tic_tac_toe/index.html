@@ -13,36 +13,73 @@
 
         <script src="app.js" defer></script>
 
-        <title>Naughts and Crosses</title>
+        <title>Noughts and Crosses</title>
 
     </head>
 
     <body>
         
         <main id="total">
-            <!-- <section id="options">
+            <section id="modal_container">
+                <div id="modal">
+                    <h1 id="title">Noughts and Crosses</h1>
 
-            </section> -->
+                    <div id="form_container">
+                        <div class="form_item">
+                            <label for="form_grid_size">Grid Size:</label>
+                            <select id="form_grid_size" name="form_grid_size">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>   
 
-            <section id="board">
+                        <div class="form_item">
+                            <label for="form_first_move">Who goes first?:</label>
+                            <select id="form_first_move" name="form_first_move">
+                                <option value="1">Player 1</option>
+                                <option value="0">Opponent</option>
+                            </select>
+                        </div>
+
+                        <div class="form_item">
+                            <label for="form_opponent_selection">Opponent:</label>
+                            <select id="form_opponent-selection" name="form_opponent_selection">
+                                <option value="Player 2">Player 2</option>
+                                <option value="Computer">Computer</option>
+                            </select>
+                        </div>
+
+                        <button class="btn" id="form_submit">Let's Play!</button>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="board_wrapper" class="hide">
             
                 <header>
-                    <div id="history-modal"></div>
-
+                    <div id="history_modal"></div>
                 </header>
 
                 <div id="content">
 
-                    <div id="player-one">
-
+                    <div id="player_one_container">
+                        <div class="player p1" id="player_one">Player 1</div>
+                        <div class="avatar p1"id="p1_avatar"></div>
+                        <div class="piece p1" id="p1_piece">Crosses</div>
+                        <div class="wins p1">Wins:<span class="number p1" id="p1_wins">0</span></div>
                     </div>
 
-                    <div id="player-two">
-
+                    <div id="player_two_container">
+                        <div class="player p2" id="player_two">Player 2</div>
+                        <div class="avatar p2"id="p2_avatar"></div>
+                        <div class="piece p2" id="p2_piece">Naughts</div>
+                        <div class="wins p2">Wins:<span class="number p2" id="p2_wins">0</span></div>
                     </div>
 
-                    <div id="center-container">
-                        <div id="grid-container"></div>
+                    <div id="center_container">
+                        <div id="grid_container"></div>
                     </div>
 
                     <div id="history">
@@ -50,6 +87,15 @@
                     </div>
 
                 </div>
+                
+                <footer>
+                    <div id="message">Crosses Goes First</div>
+                    <button class="btn" id="previous">Previous</button>
+                    <button class="btn" id="next">Next</button>
+                    <br>
+                    <button class="btn" id="reset-board">Reset Board</button>
+                    <button class="btn" id="reset-game">Reset Game</button>
+                </footer>
 
             </section>
         </main>
