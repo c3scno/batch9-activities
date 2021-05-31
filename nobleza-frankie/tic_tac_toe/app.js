@@ -59,10 +59,12 @@ function initGame() {
     (oName === "Player 2") ? isComputerActive = false : isComputerActive = true;
 
     // Change text based on inputs
-    titleDesc.textContent = ` ${gridSize}x${gridSize} Board`;
+    titleDesc.textContent = ` ${gridSize}x${gridSize} board`;
     p2Title.textContent = oName;
     p1Desc.textContent = `${inputX}'s`;
-    if (isComputerActive) {p2Avatar.style.backgroundImage = "url('https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png')"};
+    if (isComputerActive) {
+        p2Avatar.style.backgroundImage = "url('https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png')"
+    };
     p2Desc.textContent = `${inputO}'s`;
     currentPlayerMessage = `${xName} (${inputX})`;
 
