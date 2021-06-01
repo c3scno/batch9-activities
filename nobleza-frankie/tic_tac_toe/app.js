@@ -38,8 +38,8 @@ let isComputerActive;
 let isGridLocked = false;
 let xWins = 0;
 let oWins = 0;
-let currentMark; // whether it's X or O's turn
-let currentPlayerMessage; // used to display player turn
+let currentMark; // determines the current player (x or o)
+let currentPlayerMessage; // display current player
 let turnNo = 0; // used as index for gridHistory
 let turnFinished; // to be set later for max gridHistory index for prev/next buttons
 let isGameActive = true;
@@ -145,6 +145,13 @@ function stampMark() {
         this.textContent = currentMark;
         this.classList.toggle('hover');
         turnNo++;
+        console.log(`Move ${turnNo}: ${currentMark} to row# ${parseInt(this.dataset.row)+1} & col# ${parseInt(this.dataset.col)+1} `)
+        let history = document.getElementById("history");
+        history.innerHTML += `
+            <p>
+                Move ${turnNo}: ${currentMark} to Row no.${parseInt(this.dataset.row)+1} Col no.${parseInt(this.dataset.col)+1} 
+            </p>
+        `
 
         createBoardInstance(); // create and save board state in 2D array
         checkDraw(); // check if draw
@@ -169,7 +176,7 @@ function stampMark() {
             setTimeout(function() {
                 computerEasy();
                 isGridLocked = false; // set flag to false after timeout
-            }, 300);
+            }, 1500);
         }
     }
 }
@@ -186,6 +193,15 @@ function computerEasy() {
     randomGridItem.textContent = currentMark;
     randomGridItem.classList.toggle('hover');
     turnNo++;
+
+    let history = document.getElementById("history");
+    history.innerHTML += 
+        `
+        <p>
+            Move ${turnNo}: ${currentMark} to Row no.${parseInt(randomGridItem.dataset.row)+1} Col no.${parseInt(randomGridItem.dataset.col)+1} 
+        </p>
+        
+        `
 
     createBoardInstance(); // create and save board state in 2D array
     checkDraw(); // check if draw
@@ -362,6 +378,9 @@ function resetBoard() {
     addMainFunction();
     gridHistory = []; // reset gridHistory
     createBoardInstance(); // and push empty board as its first index
+    let history = document.getElementById("history");
+    console.clear()
+    history.innerHTML = "";
     
     previousBtn.classList.add('hide');
     previousBtn.classList.remove('disabled');
