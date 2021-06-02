@@ -1,18 +1,18 @@
 class Player {
-    constructor( name, sport, country ) {
+    constructor(name, sport, country) {
         this.name = name;
         this.sport = sport;
         this.country = country;
         
     }
     print() {
-        console.log( `${this.name} is a ${this.sport} player for ${this.country}` )
+        console.log(`${this.name} is a ${this.sport} player for ${this.country}`)
     }
 }
 
 class TennisPlayer extends Player {
     constructor( name, sport, age ) {
-        super( name, sport );
+        super(name, sport);
         this.age = age;
     }
     print(gender = 'male') {

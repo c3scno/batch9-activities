@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon/svg">
+        <link rel="icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon/svg">
+        <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png" type="image/x-icon/svg">
+        <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+        
+        <link rel="stylesheet" href="assets/styles/styles.css">
+
+        <script src="app.js" defer></script>
+
+        <title>Noughts and Crosses</title>
+
+    </head>
+
+    <body>
+        
+        <section class="modal">
+
+            <div class="modal-container">
+    
+                <div class="modal-title">Noughts and Crosses</div>
+                <div class="form-container">
+    
+                    <div class="form-item">
+                        <label for="form-grid-size" class="label">Grid Size:</label>
+                        <select id="form-grid-size" name="form-grid-size">
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-first-move" class="label">Who goes first?:</label>
+                        <select id="form-first-move" name="form-first-move">
+                            <option value="1">Player 1</option>
+                            <option value="0">Opponent</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-opponent-selection" class="label">Opponent:</label>
+                        <select id="form-opponent-selection" name="form-opponent-selection">
+                            <option value="Player 2">Player 2</option>
+                            <option value="Computer">Computer</option>
+                        </select>
+                    </div>
+    
+                    <button class="form-submit">Start the Game!</button>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+        <section class="content hide">
+    
+            <div class="content-top">
+                <div class="title">Noughts and Crosses</div>
+                <div class="title-desc"></div>
+            </div>
+    
+            <div class="content-center">
+    
+                <div class="player-one">
+                    <div class="content-title p1">Player 1</div>
+                    <div class="content-avatar p1"></div>
+                    <div class="content-desc p1">X's</div>
+                    <div class="content-wins p1">Wins: <span class="content-wins-text p1">0</span></div>
+                </div>
+    
+                <div class="player-two">
+                    <div class="content-title p2">Player 2</div>
+                    <div class="content-avatar p2"></div>
+                   <div class="content-desc p2">O's</div>
+                    <div class="content-wins p2">Wins: <span class="content-wins-text p2">0</span></div>
+                </div>
+    
+                <div class="center-middle">
+                    <div class="grid-container"></div>
+                </div>
+
+                <div class="center-right">
+                    <h1>History</h1>
+                    <div id="history"></div>
+                </div>
+    
+            </div>
+    
+            <div class="content-bottom">
+    
+                <div class="content-message">Player 1 goes first</div>
+    
+                <div class="content-buttons">
+                    <button class="controls previous hide">Previous</button>
+                    <button class="controls next hide">Next</button><br>
+                    <button class="controls reset">Reset Grid</button>
+                    <button class="controls total-reset">Reset Game</button>
+                </div>
+    
+            </div>
+    
+        </section>
+        
+    </body>
+
+</html>
